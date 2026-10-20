@@ -172,9 +172,9 @@ body:has(#contact:target) .desktop-nav a[href="#contact"] { color: var(--accent)
 .team-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
 .supervisor-section{margin-top:35px}
 .supervisor-heading{margin:0 0 18px;color:var(--accent);font:600 11px var(--display);letter-spacing:1.3px}
-.supervisor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.supervisor-card .avatar-placeholder{aspect-ratio:2.4}
-@media(max-width:650px){.supervisor-grid{grid-template-columns:1fr}}
+.supervisor-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.supervisor-card:first-child{grid-column:2}
+@media(max-width:950px){.supervisor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.supervisor-card:first-child{grid-column:auto}}
 @media(max-width:1080px){.method-stages{grid-template-columns:repeat(3,minmax(0,1fr))}.domain-grid .feature-panel{min-height:570px}}
 @media(max-width:950px){.research-detail{grid-template-columns:1fr;gap:22px;padding:42px 0}.detail-heading h3{margin-top:14px}.domain-grid .feature-panel{min-height:0}.method-stages{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:900px){.shared-infrastructure-row{grid-template-columns:1fr}.iot-device-visual img{width:min(100%,460px)}}
