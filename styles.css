@@ -27,6 +27,9 @@ body:has(#contact:target) .desktop-nav a[href="#contact"] { color: var(--accent)
 .mobile-nav a:focus-visible { outline-offset: -2px; }
 
 /* Native milestone disclosure widgets. */
+.milestone.is-complete .milestone-dot { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px #b7e6ca18; }
+.milestone-status { display: inline-flex; align-items: center; margin-left: 10px; padding: 5px 8px; border: 1px solid #5f9a80; border-radius: 2px; color: var(--accent); background: #b7e6ca12; font: 600 9px var(--display); letter-spacing: .8px; text-transform: uppercase; vertical-align: middle; white-space: nowrap; }
+@media (max-width: 650px) { .milestone-status { margin-left: 0; margin-top: 5px; } }
 .milestone-details { min-width: 0; }
 .milestone-details summary { position: relative; list-style: none; cursor: pointer; padding-right: 32px; }
 .milestone-details summary::-webkit-details-marker { display: none; }
