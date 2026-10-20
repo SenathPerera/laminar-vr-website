@@ -45,27 +45,39 @@ body:has(#contact:target) .desktop-nav a[href="#contact"] { color: var(--accent)
 #filter-taf:checked ~ .library-controls .filter[for="filter-taf"],
 #filter-proposals:checked ~ .library-controls .filter[for="filter-proposals"],
 #filter-checklists:checked ~ .library-controls .filter[for="filter-checklists"],
+#filter-drafts:checked ~ .library-controls .filter[for="filter-drafts"],
+#filter-paper:checked ~ .library-controls .filter[for="filter-paper"],
 #filter-final:checked ~ .library-controls .filter[for="filter-final"] { background: var(--accent); color: #09242a; }
 #filter-all:focus-visible ~ .library-controls .filter[for="filter-all"],
 #filter-taf:focus-visible ~ .library-controls .filter[for="filter-taf"],
 #filter-proposals:focus-visible ~ .library-controls .filter[for="filter-proposals"],
 #filter-checklists:focus-visible ~ .library-controls .filter[for="filter-checklists"],
+#filter-drafts:focus-visible ~ .library-controls .filter[for="filter-drafts"],
+#filter-paper:focus-visible ~ .library-controls .filter[for="filter-paper"],
 #filter-final:focus-visible ~ .library-controls .filter[for="filter-final"] { outline: 2px solid var(--accent); outline-offset: 3px; }
 #filter-taf:checked ~ .document-list .document-row:not([data-category="taf"]),
 #filter-proposals:checked ~ .document-list .document-row:not([data-category="proposals"]),
 #filter-checklists:checked ~ .document-list .document-row:not([data-category="checklists"]),
+#filter-drafts:checked ~ .document-list .document-row:not([data-category="drafts"]),
+#filter-paper:checked ~ .document-list .document-row:not([data-category="paper"]),
 #filter-final:checked ~ .document-list .document-row:not([data-category="final"]) { display: none; }
 .library-heading .count-taf,
 .library-heading .count-proposals,
 .library-heading .count-checklists,
+.library-heading .count-drafts,
+.library-heading .count-paper,
 .library-heading .count-final { display: none; }
 #filter-taf:checked ~ .library-controls .library-heading .count-all,
 #filter-proposals:checked ~ .library-controls .library-heading .count-all,
 #filter-checklists:checked ~ .library-controls .library-heading .count-all,
+#filter-drafts:checked ~ .library-controls .library-heading .count-all,
+#filter-paper:checked ~ .library-controls .library-heading .count-all,
 #filter-final:checked ~ .library-controls .library-heading .count-all { display: none; }
 #filter-taf:checked ~ .library-controls .library-heading .count-taf,
 #filter-proposals:checked ~ .library-controls .library-heading .count-proposals,
 #filter-checklists:checked ~ .library-controls .library-heading .count-checklists,
+#filter-drafts:checked ~ .library-controls .library-heading .count-drafts,
+#filter-paper:checked ~ .library-controls .library-heading .count-paper,
 #filter-final:checked ~ .library-controls .library-heading .count-final { display: inline; }
 .filter-group { flex-wrap: wrap; justify-content: flex-end; }
 
